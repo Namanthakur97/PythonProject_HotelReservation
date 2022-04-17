@@ -8,11 +8,11 @@ Reservation of hotel rooms system contains following features:
  
  2. Rooms Info
  
- 3. Room Service(Menu Card)
+ 3. Payment
  
- 4. Payment
- 
- 5. Record 
+ 4. Record 
+
+ 5. Exit
 
 ## Folder structure ##
 | Folder | Description|
