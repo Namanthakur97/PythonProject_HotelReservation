@@ -13,7 +13,7 @@ RC = []
 p = []
 ROOM_No = []
 Customer_Id = []
-Day = []
+days = []
 
 # Global Variable Declaration
 i = 0
@@ -188,8 +188,8 @@ def Booking():
     date(c_o)
     d_1 = datetime.datetime(c_i[2], c_i[1], c_i[0])
     d_2 = datetime.datetime(c_o[2], c_o[1], c_o[0])
-    d_ = (d_2 - d_1).Day
-    Day.append(d_)
+    d_ = (d_2 - d_1).days
+    days.append(d_)
 
     print("----SELECT ROOM TYPE----")
     print(" 1. Standard Non-AC")
@@ -330,8 +330,8 @@ def payment():
                 print("  3- Using UPI")
                 print("  4- Cash")
                 x = int(input("-> "))
-                print("\n  Amount: ", (PRICE[n] * Day[n]) + RC[n])
-                print("\n            Pay For SHAILAKSHI")
+                print("\n  Amount: ", (PRICE[n] * days[n]) + RC[n])
+                print("\n            Pay For Naman Thakur")
                 print("  (y/n)")
                 c_h = str(input("->"))
 
@@ -343,10 +343,10 @@ def payment():
                     print(" --------------------------------")
                     print(" NAME: ", NAME[n], "\t\n PHONE No.: ", PHONE_No[n], "\t\n ADDress: ", ADD[n], "\t")
                     print("\n Check-In: ", Checkin_Date[n], "\t\n Check-Out: ", Checkout_date[n], "\t")
-                    print("\n ROOM Type: ", ROOM[n], "\t\n ROOM Charges: ", PRICE[n] * Day[n], "\t")
+                    print("\n ROOM Type: ", ROOM[n], "\t\n ROOM Charges: ", PRICE[n] * days[n], "\t")
                     print(" Restaurant Charges: \t", RC[n])
                     print(" --------------------------------")
-                    print("\n Total Amount: ", (PRICE[n] * Day[n]) + RC[n], "\t")
+                    print("\n Total Amount: ", (PRICE[n] * days[n]) + RC[n], "\t")
                     print(" --------------------------------")
                     print("          Thank You")
                     print("          Visit Again :)")
